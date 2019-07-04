@@ -68,9 +68,12 @@
     }
 
     FHIR.oauth2.ready(onReady, onError);
+    
+     getRiskData();
+    
     return ret.promise();
 
-     getRiskData();
+    
   };
 
   function defaultPatient(){
